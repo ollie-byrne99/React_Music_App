@@ -7,9 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-.gitignore
-vite.congig.json
-.eslintrc.cjs
 
 node_modules
 dist
