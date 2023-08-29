@@ -1,6 +1,6 @@
-@import url("./base.css");
+/* @import url("./base.css");
 @import url("./form.css");
-@import url("./layout.css");
+@import url("./layout.css"); */
 
 
 body {
@@ -9,6 +9,13 @@ body {
   
   p {
     font-size: 20px;
+  }
+
+  .page_top {
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   
   header {
@@ -27,9 +34,12 @@ body {
   footer {
     background-color: grey;
     padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 15px;
     text-align: center;
     font-size: 20px;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-color: black;
   }
   
   nav {
@@ -38,7 +48,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 8px;
   }
   
   .image_container {
@@ -59,6 +69,8 @@ body {
   
   .Artist_Info {
     background-color: grey;
+    border-style: solid;
+    border-color: black;
     }
   
   .Artist_Align {
@@ -71,8 +83,10 @@ body {
   .Albums {
     background-color: grey;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
+    border-style: solid;
+    border-color: black;
   }
   
   .like_container {
@@ -105,4 +119,39 @@ body {
   
   .like_button.liked:hover {
     background-color: #1E8449; 
+  }
+
+
+  .email_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+  .sign_up {
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    background-color: grey;
+  }
+
+  #message {
+    text-align: center;
   }

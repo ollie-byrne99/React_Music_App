@@ -81,19 +81,49 @@ const NavBar = () => (
     </nav>
   );
 
+  const EmailForm = () => {
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const handleEmailSubmission = e => {
+      e.preventDefault();
+      setMessage(`${email} has been added to the mailing list!`);
+      setEmail('');
+    };
+  
+    return (
+      <div class = "sign_up">
+      <h2>Join the Community!</h2>
+      <div className="email_form">
+        <form onSubmit={handleEmailSubmission}>
+          <input 
+            type="email" 
+            value={email} 
+            onChange={e => setEmail(e.target.value)} 
+            placeholder="example@outlook.com" 
+            required 
+          />
+          <button class = "like_button" type="submit">Submit</button>
+        </form>
+      </div>
+      <p id = "message">{message}</p>
+      </div>
+    );
+  };
 
 export default function App(){
   return (
     <>
-    <div>
+    <div class = "page_top">
         <NavBar />
+    <header>Welcome to the Hozier Fan Club!</header>
     </div>
-    <header>Hozier's Albums Fan Club</header>
     <div>
       <ArtistInfo />
       <AlbumList />
+      <EmailForm />
     </div>
-    <footer>©Hozier 2023</footer>
+    <footer>©Hozier Fan Club 2023</footer>
     </>
   );
 };
