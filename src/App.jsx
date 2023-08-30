@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css'
-import { AlbumList, ArtistInfo, EmailForm, NavBar } from './components'
+import { AlbumList, ArtistInfo, EmailForm, NavBar, FetchRequest } from './components'
 
 export default function App(){
   return (
@@ -13,6 +13,7 @@ export default function App(){
       <ArtistInfo />
       <AlbumList />
       <EmailForm />
+      <FetchRequest />
     </div>
     <footer>©Hozier Fan Club 2023</footer>
     </>

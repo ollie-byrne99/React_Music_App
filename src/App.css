@@ -66,6 +66,7 @@ body {
     background-color: grey;
     border-style: solid;
     border-color: black;
+    margin: 10px;
     }
   
   .Artist_Align {
@@ -78,8 +79,7 @@ body {
   .Albums {
     background-color: grey;
     padding: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 10px;
     border-style: solid;
     border-color: black;
   }
@@ -121,7 +121,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
   }
 
   input {
@@ -145,8 +145,19 @@ body {
     padding-bottom: 5px;
     margin-bottom: 5px;
     background-color: grey;
+    margin: 10px;
   }
 
   #message {
     text-align: center;
+  }
+
+  .lyric_box {
+    border-style: solid;
+    border-color: black;
+    background-color: grey;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
   }
