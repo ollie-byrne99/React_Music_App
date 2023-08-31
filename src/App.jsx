@@ -1,21 +1,23 @@
-import React from 'react';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { NavBar } from './layout'
+import * as Pages from './pages'
 import './App.css'
-import { AlbumList, ArtistInfo, EmailForm, NavBar, FetchRequest } from './components'
+
 
 export default function App(){
   return (
     <>
-    <div class = "page_top">
         <NavBar />
-    <header>Welcome to the Hozier Fan Club!</header>
-    </div>
-    <div>
-      <ArtistInfo />
-      <AlbumList />
-      <EmailForm />
-      <FetchRequest />
-    </div>
-    <footer>©Hozier Fan Club 2023</footer>
+        <Routes>
+        <Route path="/" element={<Pages.Home />} />
+
+        <Route path="/about" element={<Pages.About />}></Route>
+
+        <Route path="/contact" element={<Pages.Contact />}></Route>
+
+        <Route path="*" element={<Pages.NotFound /> }></Route>
+      </Routes>
     </>
   );
 };

@@ -6,20 +6,6 @@ body {
     font-size: 20px;
   }
 
-  .page_top {
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-  
-  header {
-    background-color: grey;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 40px;
-  }
-  
   
   li {
     font-size: 25px;
@@ -41,7 +27,6 @@ body {
     background-color: grey;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     font-size: 1.5rem;
     padding: 8px;
   }
