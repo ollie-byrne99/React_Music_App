@@ -10,14 +10,15 @@ export default function App(){
     <>
         <NavBar />
         <Routes>
-        <Route path="/" element={<Pages.Home />} />
+          <Route path="/" element={<Pages.Home />} />
 
-        <Route path="/about" element={<Pages.About />}></Route>
+          <Route path="/about" element={<Pages.About />}></Route>
 
-        <Route path="/contact" element={<Pages.Contact />}></Route>
+          <Route path="/contact" element={<Pages.Contact />}></Route>
 
-        <Route path="*" element={<Pages.NotFound /> }></Route>
-      </Routes>
+          <Route path="*" element={<Pages.NotFound /> }></Route>
+        </Routes>
+        <footer>©Hozier Fan Club 2023</footer>
     </>
   );
 };

@@ -6,11 +6,10 @@ const Home = () => {
         <>
         <h1>Welcome to the Hozier Fan Club!</h1>
         <div>
-        <ArtistInfo />
-        <AlbumList />
-        <FetchRequest />
-      </div>
-      <footer>©Hozier Fan Club 2023</footer>
+          <ArtistInfo />
+          <AlbumList />
+          <FetchRequest />
+        </div>
       </>
     )
   }
